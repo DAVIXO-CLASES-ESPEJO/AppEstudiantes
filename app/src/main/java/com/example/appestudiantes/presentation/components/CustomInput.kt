@@ -26,7 +26,7 @@ fun CustomInput(
     // input de una sola linea
     singleLine: Boolean = true,
     // recibir un icono al final del input
-
+    trailingIcon: @Composable (() -> Unit)? = null
 ){
     OutlinedTextField(
         value = value,
@@ -35,7 +35,7 @@ fun CustomInput(
         singleLine = singleLine,
         visualTransformation = visualTransformation,
         keyboardOptions = KeyboardOptions(keyboardType = keyboardType),
-        //trailingIcon = trailingIcon,
+        trailingIcon = trailingIcon,
         modifier = modifier.fillMaxWidth()
     )
 }
