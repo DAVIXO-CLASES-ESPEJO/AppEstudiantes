@@ -26,6 +26,7 @@ fun CustomInput(
     // input de una sola linea
     singleLine: Boolean = true,
     // recibir un icono al final del input
+
 ){
     OutlinedTextField(
         value = value,
